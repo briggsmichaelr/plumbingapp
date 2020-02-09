@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Which Room?</h1>
+
+<form action="" method="post">
+  {%csrf_token%}
+    <input type="submit" name="room" value="Kitchen" />
+</form>
+<form action="" method="post">
+  {%csrf_token%}
+    <input type="submit" name="room" value="Bathroom" />
+</form>
+
+
+
+{% endblock %}

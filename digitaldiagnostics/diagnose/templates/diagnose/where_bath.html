@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Where is the problem located?</h1>
+
+<form action="" method="post">
+  {%csrf_token%}
+    <input type="submit" name="where" value="Toilet" />
+</form>
+<form action="" method="post">
+  {%csrf_token%}
+    <input type="submit" name="where" value="Sink" />
+</form>
+
+{% endblock %}

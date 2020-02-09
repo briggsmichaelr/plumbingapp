@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Do you have an account?</h1>
+
+<form action="" method="post">
+  {%csrf_token%}
+    <input type="submit" name="account" value="Yes" />
+</form>
+<form action="" method="post">
+  {%csrf_token%}
+    <input type="submit" name="account" value="No" />
+</form>
+
+{% endblock %}
