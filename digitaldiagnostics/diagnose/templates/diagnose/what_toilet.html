@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>What is the problem you are having?</h1>
+
+<form action="" method="post">
+  {%csrf_token%}
+    <input type="submit" name="what" value="Won't Flush" />
+</form>
+<form action="" method="post">
+  {%csrf_token%}
+    <input type="submit" name="what" value="Overflow" />
+</form>
+<form action="" method="post">
+  {%csrf_token%}
+    <input type="submit" name="what" value="Cracked" />
+</form>
+<form action="" method="post">
+  {%csrf_token%}
+    <input type="submit" name="what" value="Leaking" />
+</form>
+<form action="" method="post">
+  {%csrf_token%}
+    <input type="submit" name="what" value="Other" />
+</form>
+
+
+
+{% endblock %}

@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'diagnose.apps.DiagnoseConfig',
     'accounts.apps.AccountsConfig',
+    'phonenumber_field',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -2,23 +2,23 @@
 
 {% block content %}
 
-<h1>Which room is it in?</h1>
+<h1>When did you notice the problem?</h1>
 
 <form action="" method="post">
   {%csrf_token%}
-    <input type="submit" name="room" value="Kitchen" />
+    <input type="submit" name="when" value="Within 1 Day" />
 </form>
 <form action="" method="post">
   {%csrf_token%}
-    <input type="submit" name="room" value="Bathroom" />
+    <input type="submit" name="when" value="Within 1 Week" />
 </form>
 <form action="" method="post">
   {%csrf_token%}
-    <input type="submit" name="room" value="Laundry Room" />
+    <input type="submit" name="when" value="Within 1 Month" />
 </form>
 <form action="" method="post">
   {%csrf_token%}
-    <input type="submit" name="room" value="Other" />
+    <input type="submit" name="when" value="Other" />
 </form>
 
 

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<br>
+{%for report in reports.all reversed%}
+
+<a href="{%url 'detail' report.id%}"><span align="center"> {{report.user}} {{report.time}} </span></a>  <a href="{%url 'delete' report.id%}">Delete</a>
+<br>
+
+{%endfor%}
+
+{% endblock %}

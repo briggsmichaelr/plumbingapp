@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Has it caused any damage?</h1>
+
+<form action="" method="post">
+  {%csrf_token%}
+    <input type="submit" name="access" value="Yes" />
+</form>
+<form action="" method="post">
+  {%csrf_token%}
+    <input type="submit" name="access" value="No" />
+</form>
+
+{% endblock %}
